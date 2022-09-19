@@ -1,0 +1,30 @@
+---
+title: "Math 104A (2022 Fall) - Introduction to numerical analysis"
+author: "Jea-Hyun Park"
+date: "2022-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Syllabus
+
+[Syllabus (Google doc)](https://docs.google.com/document/d/1SYEj8hRaOvg_5h_YQg4tpgn6rFfCK90nyNkxl4EJ8X4/edit?usp=sharing) 
+
+## Course Calendar
+[Course Calendar (Google sheet)](https://docs.google.com/spreadsheets/d/1F_sdCRuRNuAO_UI5SutbjAc398I9ITBQfKOXatjHRxI/edit?usp=sharing) 
+
+## Notes/Slides/HW/Solution
+
+|        |            |       |
+|:------:|:----------:|:-----:|
+| Week 0 |            | 09/22 |
+|        |            | [Notes](./notes/104ANotes_RootFinding01.pdf) |
+<!-- | Week 1 | 09/27      | 09/29 |
+|        | [Notes](./notes/104ANotes_RootFinding02.pdf), [HW1](/hw/104AHW_RootFinding01.pdf) | [Notes](/notes/104ANotes_RootFinding02.pdf) |
+| Week 2 | 10/04      | 10/06 |
+|        | Notes, HW2 | Notes |
+-->
+

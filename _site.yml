@@ -2,7 +2,7 @@ name: "Jea-Hyun Park's website"
 output_dir: 'docs'
 output:
   html_document:
-    theme: cerulean
+    theme: readable # cerulean
     highlight: zenburn
     toc: true
     toc_depth: 2

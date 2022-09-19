@@ -12,6 +12,6 @@ output:
 
 More will come. 
 
-## Current courses
+## Current classes
 
-[ Math 104A (Fall 2022)](./teaching.html)
+[ Math 104A (Fall 2022)](./M104A2022Fall.html)

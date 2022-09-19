@@ -9,20 +9,15 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Math 104A (2022 Fall, UCSB)
+## UCSB
 
-[Syllabus](https://docs.google.com/document/d/1SYEj8hRaOvg_5h_YQg4tpgn6rFfCK90nyNkxl4EJ8X4/edit?usp=sharing) 
+### 2022-2023
 
-[Course Calendar](https://docs.google.com/spreadsheets/d/1F_sdCRuRNuAO_UI5SutbjAc398I9ITBQfKOXatjHRxI/edit?usp=sharing) 
+#### Math 104A (Fall) Introduction to numerical analysis [Course page](./M104A2022Fall.html)
 
-|        |            |       |
-|:------:|:----------:|:-----:|
-| Week 0 |            | 09/22 |
-|        |            | [Notes](./notes/104ANotes_RootFinding01.pdf) |
-<!-- | Week 1 | 09/27      | 09/29 |
-|        | [Notes](./notes/104ANotes_RootFinding02.pdf), [HW1](/hw/104AHW_RootFinding01.pdf) | [Notes](/notes/104ANotes_RootFinding02.pdf) |
-| Week 2 | 10/04      | 10/06 |
-|        | Notes, HW2 | Notes |
--->
+### 2021-2022
 
-
+#### Math 3B (Spring) Calculus 2 
+#### Math 3B (Winter) Calculus 2 
+#### Math 4A (Fall) Introduction to linear algebra 
+#### Math 3B (Fall) Calculus 2 
