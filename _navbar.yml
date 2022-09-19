@@ -2,8 +2,8 @@ name: "Jea-Hyun's website"
 title: "Home"
 type: inverse
 left:
-  - text: "About me"
-    href: ./aboutme.html
+  #- text: "About me"
+  #  href: ./aboutme.html
   #  menu:
   #    - text: "Learn more about me"
   #      href: ./aboutme.html
@@ -11,10 +11,10 @@ left:
   #  menu:
   - text: "Teaching"
     href: ./teaching.html
-  - text: "Research"
-    href: ./research.html
-  - text: "Contact"
-    href: ./contact.html
+  #- text: "Research"
+  #  href: ./research.html
+  #- text: "Contact"
+  #  href: ./contact.html
 #right:
 #  - icon: fa-github fa-lg
 #    href: https://github.com/githubusername/mywebsite

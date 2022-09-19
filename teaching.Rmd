@@ -9,22 +9,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Math 104A (2022 Fall, UCSB)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+[Syllabus](https://docs.google.com/document/d/1SYEj8hRaOvg_5h_YQg4tpgn6rFfCK90nyNkxl4EJ8X4/edit?usp=sharing) 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+[Course Calendar](https://docs.google.com/spreadsheets/d/1F_sdCRuRNuAO_UI5SutbjAc398I9ITBQfKOXatjHRxI/edit?usp=sharing) 
 
-```{r cars}
-summary(cars)
-```
+|        |            |       |
+|:------:|:----------:|:-----:|
+| Week 0 |            | 09/22 |
+|        |            | [Notes](./notes/104ANotes_RootFinding01.pdf) |
+<!-- | Week 1 | 09/27      | 09/29 |
+|        | [Notes](./notes/104ANotes_RootFinding02.pdf), [HW1](/hw/104AHW_RootFinding01.pdf) | [Notes](/notes/104ANotes_RootFinding02.pdf) |
+| Week 2 | 10/04      | 10/06 |
+|        | Notes, HW2 | Notes |
+-->
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
