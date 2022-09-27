@@ -21,10 +21,10 @@ knitr::opts_chunk$set(echo = TRUE)
 |        |            |       |
 |:------:|:----------:|:-----:|
 | Week 0 |            | 09/22 |
-|        |            | [Notes](./notes/104ANotes_RootFinding01.pdf), [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|
-<!-- | Week 1 | 09/27      | 09/29 |
-|        | [Notes](./notes/104ANotes_RootFinding02.pdf), [HW1](/hw/104AHW_RootFinding01.pdf) | [Notes](/notes/104ANotes_RootFinding02.pdf) |
-| Week 2 | 10/04      | 10/06 |
+|        |            | [Slides](./notes/104ANotes_RootFinding01.pdf), [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|
+| Week 1 | 09/27      | 09/29 |
+|        | [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|  |
+<!--| Week 2 | 10/04      | 10/06 |
 |        | Notes, HW2 | Notes |
 -->
 
