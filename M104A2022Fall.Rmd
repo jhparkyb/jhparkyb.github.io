@@ -16,14 +16,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Course Calendar
 [Course Calendar (Google sheet)](https://docs.google.com/spreadsheets/d/1F_sdCRuRNuAO_UI5SutbjAc398I9ITBQfKOXatjHRxI/edit?usp=sharing) 
 
-## Notes/Slides/HW/Solution
+## Notes/Slides
+The board work contents are cumulative by chapter. Click on any date that covers each chapter. 
 
 |        |            |       |
 |:------:|:----------:|:-----:|
 | Week 0 |            | 09/22 |
-|        |            | [Slides](./notes/104ANotes_RootFinding01.pdf), [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|
+|        |            | Ch. 3 Solution of nonlinear equations - Bisection [Slides](./notes/104ANotes_RootFinding01.pdf), [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|
 | Week 1 | 09/27      | 09/29 |
-|        | [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|  |
+|        | Ch. 3 Solution of nonlinear equations - Newton's method [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|Ch. 3 Solution of nonlinear equations - Secant method [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|  |
 <!--| Week 2 | 10/04      | 10/06 |
 |        | Notes, HW2 | Notes |
 -->
