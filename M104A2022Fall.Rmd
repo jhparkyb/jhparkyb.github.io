@@ -22,10 +22,10 @@ The slides and board work files are updated by chapter, not by date. Click on an
 |        |            |       |
 |:------:|:----------:|:-----:|
 | Week 0 |            | 09/22 |
-|        |            | Ch. 3 Solution of nonlinear equations - Bisection method [Slides](./notes/104ANotes_RootFinding01.pdf), [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|
+|        |            | Ch. 3 Solution of nonlinear equations - Bisection method [Slides](./notes/104ASlides_RootFinding01.pdf), [Board work](./notes/104ABoardWork_RootFinding01.pdf)|
 | Week 1 | 09/27      | 09/29 |
-|        | Ch. 3 Solution of nonlinear equations - Newton's method [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|Ch. 3 Solution of nonlinear equations - Secant method [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf)|  |
+|        | Ch. 3 Solution of nonlinear equations - Newton's method [Slides](./notes/104ASlides_RootFinding01.pdf),  [Board work](./notes/104ABoardWork_RootFinding01.pdf)|Ch. 3 Solution of nonlinear equations - Secant method [Slides](./notes/104ASlides_RootFinding01.pdf),  [Board work](./notes/104ABoardWork_RootFinding01.pdf)|  |
 | Week 2 | 10/04      | 10/06 |
-|        | Ch. 3 Solution of nonlinear equations - Fixed point iteration [Slides](./notes/104ANotes_RootFinding01.pdf),  [Board work](./notes/M104ABoardWork_RootFinding01.pdf) | |
+|        | Ch. 3 Solution of nonlinear equations - Fixed point iteration [Slides](./notes/104ASlides_RootFinding01.pdf),  [Board work](./notes/104ABoardWork_RootFinding01.pdf) | Ch. 6 Approximation [Slides](./notes/104ASlides_Approximation01.pdf),  [Board work](./notes/104ABoardWork_Approximation01.pdf)|
 
 
