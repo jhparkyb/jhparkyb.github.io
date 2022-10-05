@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [Course Calendar (Google sheet)](https://docs.google.com/spreadsheets/d/1F_sdCRuRNuAO_UI5SutbjAc398I9ITBQfKOXatjHRxI/edit?usp=sharing) 
 
 ## Notes/Slides
-The slides and board work files are updated by chapter, not by date. Click on any date that covers each chapter. 
+The slides and board work files are updated by chapter, not by date. Click on any date that covers each chapter.
 
 |        |            |       |
 |:------:|:----------:|:-----:|
