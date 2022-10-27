@@ -32,6 +32,6 @@ The slides and board work files are updated by chapter, not by date. Click on an
 | Week 4 | 10/18      | 10/20 |
 |        | Ch. 6 Approximation - Chebychev polynomials, Divided differences [Slides](./notes/104ASlides_Approximation01.pdf),  [Board work](./notes/104ABoardWork_Approximation01.pdf) | Ch. 6 Approximation - Divided differences, Computational HW1 review [Slides](./notes/104ASlides_Approximation01.pdf),  [Board work](./notes/104ABoardWork_Approximation01.pdf)|
 | Week 5 | 10/25      | 10/27 |
-|        | Midterm (Ch. 3, 6) | Ch. 7 Numerical differentiation and integration - Numerical differentication | <!-- [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf)| -->
+|        | Midterm (Ch. 3, 6) | Ch. 7 Numerical differentiation and integration - Numerical differentication [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf)|
  
 
