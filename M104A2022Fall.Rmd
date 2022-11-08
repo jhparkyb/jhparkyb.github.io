@@ -36,6 +36,6 @@ The slides and board work files are updated by chapter, not by date. Click on an
 | Week 6 | 11/01      | 11/3 |
 |        | Ch. 7 Numerical differentiation and integration - Newton-Cotes [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf) | Ch. 7 Numerical differentiation and integration - Newton-Cotes, Gaussian Quadrature [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf)|
 | Week 7 | 11/08      | 11/10 |
-|        | Ch. 7 Numerical differentiation and integration - Gaussian quadrature [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf) | Ch. 8 Numerical methods for ODE - Existence and uniqueness |  [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf)|
+|        | Ch. 7 Numerical differentiation and integration - Gaussian quadrature [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf) | Ch. 8 Numerical methods for ODE - Existence and uniqueness |  [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf)| 
  
 
