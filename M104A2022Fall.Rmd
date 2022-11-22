@@ -39,4 +39,6 @@ The slides and board work files are updated by chapter, not by date. Click on an
 |        | Ch. 7 Numerical differentiation and integration - Gaussian quadrature [Slides](./notes/104ASlides_NumDiffInt01.pdf),  [Board work](./notes/104ABoardWork_NumDiffInt01.pdf) | Ch. 8 Numerical methods for ODE - Existence and uniqueness [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf)| 
 | Week 8 | 11/15      | 11/17 |
 |        | Ch. 8 Numerical methods for ODE - Existence and uniqueness, Taylor-series method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Ch. 8 Numerical methods for ODE - Runge-Kutta method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf)| 
+| Week 9 | 11/22      | 11/24 |
+|        | Ch. 8 Numerical methods for ODE - Linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Thanksgiving | 
 
