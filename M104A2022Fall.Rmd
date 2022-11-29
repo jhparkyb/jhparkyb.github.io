@@ -41,4 +41,6 @@ The slides and board work files are updated by chapter, not by date. Click on an
 |        | Ch. 8 Numerical methods for ODE - Existence and uniqueness, Taylor-series method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Ch. 8 Numerical methods for ODE - Runge-Kutta method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf)| 
 | Week 9 | 11/22      | 11/24 |
 |        | Ch. 8 Numerical methods for ODE - Linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Thanksgiving | 
+| Week 10 | 11/29      | 12/01 |
+|        | Ch. 8 Numerical methods for ODE - Convergence of linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Ch. 8 Numerical methods for ODE - Convergence of linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | 
 
