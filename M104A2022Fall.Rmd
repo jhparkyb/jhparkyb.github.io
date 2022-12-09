@@ -43,4 +43,7 @@ The slides and board work files are updated by chapter, not by date. Click on an
 |        | Ch. 8 Numerical methods for ODE - Linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Thanksgiving | 
 | Week 10 | 11/29      | 12/01 |
 |        | Ch. 8 Numerical methods for ODE - Convergence of linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | Ch. 8 Numerical methods for ODE - Convergence of linear multistep method [Slides](./notes/104ASlides_NumODE01.pdf),  [Board work](./notes/104ABoardWork_NumODE01.pdf) | 
+<!-- | Week 11 | 12/5      | 12/6,7 |
+|        | Special offce hours (10-11am, 1-2pm),  [Computational HW2](./notes/ComHW2.pdf),  [Example code](https://colab.research.google.com/drive/1m1hT7a1On1iCazM60mmtGEl7rfTf6guc?usp=sharing), [Discussion on the example code and the result](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a89358d-1d05-4d3e-878d-af6101720295)| Final exam | 
+-->
 
