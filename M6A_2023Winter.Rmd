@@ -1,0 +1,64 @@
+---
+title: "Math 6A (2023 Winter) - Vector Calculus 1"
+author: "Jea-Hyun Park"
+date: "2022-12-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Syllabus
+
+## Basic information
+Time: TR 3:30- 4:45 PM
+Location: TD-W 1701
+
+<!--[Syllabus (Google doc)]() -->
+
+# Mindmap/Notes/Slides
+Mindmaps are the gateway to the material (notes, slides, etc.). Walk around them whenever you need some material.
+
+[Mindmap of pure concepts/tools]()
+
+[Mindmap with contributions by hard-working peers]()
+
+[Mindmap with collective contributions by the class]()
+
+
+# Calendar
+
+|        |            |       |
+|:------:|:----------:|:-----:|
+| Week 1 | 01/10 | 01/12  |
+|        |            |  |
+| Week 2 | 01/17      | 01/19 |
+|        |            |  |
+| Week 3 | 01/24      | 01/26 |
+|        |            |  |
+| Week 4 |  01/31 | 02/02 |
+|        |            |  |
+| Week 5 |02/07 | 02/09 |
+|        |            |  |
+| Week 6 |  02/14 | 02/16 |
+|        |            |  |
+| Week 7 |  02/21 | 02/23 |
+|        |            |  |
+| Week 8 |  02/28 | 03/02 |
+|        |            |  |
+| Week 9 |  03/07 | 03/09 |
+|        |            |  |
+| Week 10 |  03/14 | 03/16 |
+|        |            |  |
+<!--| Final exam week | 03/21  |  03/23 |
+|        |            | Final Exam (4-7 PM) |
+|  |   |  |
+|        |            |  |-->
+
+<!-- | Week 11 | 12/5      | 12/6,7 |
+|        | Special offce hours (10-11am, 1-2pm),  [Computational HW2](./notes/ComHW2.pdf),  [Example code](https://colab.research.google.com/drive/1m1hT7a1On1iCazM60mmtGEl7rfTf6guc?usp=sharing), [Discussion on the example code and the result](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a89358d-1d05-4d3e-878d-af6101720295)| Final exam | 
+-->
+

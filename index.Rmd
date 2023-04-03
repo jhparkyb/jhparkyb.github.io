@@ -14,4 +14,10 @@ More will come.
 
 ## Current classes
 
-[ Math 104A (Fall 2022)](./M104A2022Fall.html)
+Math 6A (Spring 2022)
+
+<!-- [ Math 6A (Winter 2023)](./M6A_2023Winter.html)
+
+[ Math 8 (Winter 2023)](./M8_2023Winter.html)
+
+[ Math 104A (Fall 2022)](./M104A_2022Fall.html) -->

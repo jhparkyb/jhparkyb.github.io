@@ -1,0 +1,42 @@
+---
+title: "Cheatsheets"
+author: "Jea-Hyun Park"
+date: "2022-12-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Computing
+
+## Python
+
+## PyTorch for scientific computing
+
+## Pandas
+
+## Matplotlib
+
+## Matlab
+
+# Documentation
+
+## LaTex
+
+## R
+
+# Education Technology
+
+## Mindmaps
+### [GitMind](https://gitmind.com) 
+ (2022-12-20) It is a very satisfying cloud-based mindmap service. For example, it is easy to move existing nodes to other node. You can export the mindmap as a Word file as hierarchical bullets. Free up to 10 mindmaps. 
+ 
+ [GitMind Cheatsheet](https://gitmind.com/faq/how-to-use-gitmind.html)
+ 
+
+# Operating systems
+
+## Linux
+
+## Mac
