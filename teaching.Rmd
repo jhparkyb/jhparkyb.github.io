@@ -12,10 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### 2022-2023
 
-### Math 6A (Spring) Vector Calculus 1 
+#### Math 6A (Spring) Vector Calculus 1 [Course page (Canvas)](https://www.canvas.ucsb.edu/)
 
-#### Math 6A (Winter) Vector Calculus 1 [Course page](./M6A_2023Winter.html)
-#### Math 8 (Winter) Transition to higher mathematics [Course page](./M8_2023Winter.html)
+#### Math 6A (Winter) Vector Calculus 1 [Course page (Canvas)](https://www.canvas.ucsb.edu/)
+#### Math 8 (Winter) Transition to higher mathematics [Course page (Canvas)](https://www.canvas.ucsb.edu/)
 
 #### Math 104A (Fall) Introduction to numerical analysis [Course page](./M104A2022Fall.html)
 

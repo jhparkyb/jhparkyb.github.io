@@ -14,7 +14,7 @@ More will come.
 
 ## Current classes
 
-Math 6A (Spring 2022)
+Math 6A (Spring 2023)
 
 <!-- [ Math 6A (Winter 2023)](./M6A_2023Winter.html)
 
