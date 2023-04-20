@@ -34,7 +34,7 @@ Mindmaps are the gateway to the material (notes, slides, etc.). Walk around them
 |        |            |       |
 |:------:|:----------:|:-----:|
 | Week 1 | 01/10 | 01/12  |
-|        | [Notes](./resources/Notes/VecCal/VecCal01_BldgBlcs_Vectors.pdf)            |  |
+|        |             |  |
 | Week 2 | 01/17      | 01/19 |
 |        |            |  |
 | Week 3 | 01/24      | 01/26 |
