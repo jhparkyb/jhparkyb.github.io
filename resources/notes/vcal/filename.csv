@@ -1,0 +1,6 @@
+VecCal01_BldgBlcs_DotCrossProd.pdf
+VecCal01_BldgBlcs_Lines.pdf
+VecCal01_BldgBlcs_Matrix_Review.pdf
+VecCal01_BldgBlcs_Planes.pdf
+VecCal01_BldgBlcs_Vectors.pdf
+find * > filename.csv
