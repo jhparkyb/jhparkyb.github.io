@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Syllabus
+## Syllabus 
 
 [Syllabus (Google doc)](https://docs.google.com/document/d/1SYEj8hRaOvg_5h_YQg4tpgn6rFfCK90nyNkxl4EJ8X4/edit?usp=sharing) 
 
