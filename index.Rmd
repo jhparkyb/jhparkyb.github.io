@@ -14,7 +14,7 @@ More will come.
 
 ## Current classes
 
-Math 6A (Spring 2023)
+[Math 104A (Fall 2023)](teaching/M104A2023Fall.html)
 
 <!-- [ Math 6A (Winter 2023)](./M6A_2023Winter.html)
 

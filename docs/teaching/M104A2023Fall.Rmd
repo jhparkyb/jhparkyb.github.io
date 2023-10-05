@@ -1,0 +1,14 @@
+---
+title: "Math 104A (2023 Fall) - Introduction to numerical analysis"
+author: "Jea-Hyun Park"
+date: "2023-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Notes
+
+Notes are available at [Github](https://github.com/jhparkyb/NumAnalNotes_Pub.git)

@@ -24,9 +24,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## LaTex
 
-## R
+## R Markdown
 
-# Education Technology
+[R Markdown's site generator](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
+
+# Education Technology 
 
 ## Mindmaps
 ### [GitMind](https://gitmind.com) 
