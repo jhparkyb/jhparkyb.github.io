@@ -12,3 +12,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Notes
 
 Notes are available at [Github](https://github.com/jhparkyb/NumAnalNotes_Pub.git)
+
+ 
