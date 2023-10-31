@@ -11,10 +11,12 @@ left:
   #  menu:
   - text: "Teaching"
     href: ./teaching.html
+  - text: "Mentoring"
+    href: ./mentoring.html
   #- text: "Cheatsheets"
   #  href: ./cheatsheets.html
-  #- text: "Research"
-  #  href: ./research.html
+  - text: "Research"
+    href: ./research.html
   #- text: "Contact"
   #  href: ./contact.html
 #right:

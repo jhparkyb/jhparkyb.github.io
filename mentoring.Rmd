@@ -1,0 +1,25 @@
+---
+title: "Mentoring"
+author: "Jea-Hyun Park"
+date: "2022-10-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Research Mentoring
+
+## REU at UCSB
+
+1. Li, D., Malowney S., Trehan R., \& Chung T. *Sparse Learning of Multi-Agent Systems from Data* (2021 Summer REU, co-mentor with Tang S. UCSB)
+
+<!-- Dongyang Li, Shelby Malowney, Ritwik Trehan, Tim Chung -->
+
+## Directed Reading
+
+2. Sabata, S. *Hamiltonian Monte Carlo* 
+
+## REU (self-organized)
+
+3. (in progress) Karo, R. \& Sabata, S. (2023) *Data-driven discovery of mobility of Cahn-Hilliard equation*. 
