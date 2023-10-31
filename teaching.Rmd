@@ -8,32 +8,78 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# UCSB
-## 2023-2024
 
-### Math 104A (Fall 2023) Introduction to numerical analysis 
-[Syllabus](https://docs.google.com/document/d/1K_md6Z-yUBa_BZBmr4WeuP_zxYJma11KTNaPgcb6S5A/edit#heading=h.o7lv0c741s2y)
-[Calendar](https://docs.google.com/spreadsheets/d/1wi7Sto-xEBwx1Zu-4O4ifKSAdLKR_JtcUxyV6bhFWzU/edit#gid=1948326807)
-[Notes (Github)](https://github.com/jhparkyb/NumAnalNotes_Pub)
-[Canvas](https://www.canvas.ucsb.edu/)
 
-<!-- [Course page](teaching/M104A2023Fall.html) -->
+# Courses
 
-## 2022-2023
+## UCSB
 
-### Math 6A (Spring 2023) Vector Calculus 1 [Course page (Canvas)](https://www.canvas.ucsb.edu/)
+*University of California Santa Barbara*
 
-### Math 6A (Winter 2023) Vector Calculus 1 [Course page (Canvas)](https://www.canvas.ucsb.edu/)
+### 2023-2024
 
-### Math 8 (Winter 2023) Transition to higher mathematics [Course page (Canvas)](https://www.canvas.ucsb.edu/)
+* Math 104A (Fall 2023) Introduction to numerical analysis [Notes (Github)](https://github.com/jhparkyb/NumAnalNotes_Pub)
 
-### Math 104A (Fall 2022) Introduction to numerical analysis [Course page](teaching/M104A2022Fall.html)
+### 2022-2023
 
-## 2021-2022
+* Math 6A (Spring 2023) Vector Calculus 1 [Mind-map-based Notes](https://gitmind.com/app/docs/m40p69tw) 
+* Math 6A (Winter 2023) Vector Calculus 1 
+* Math 8 (Winter 2023) Transition to higher mathematics 
+* Math 104A (Fall 2022) Introduction to numerical analysis [Course page](teaching/M104A2022Fall.html)
 
-### Math 3B (Spring 2022) Calculus 2 
-### Math 3B (Winter 2022) Calculus 2 
-### Math 4A (Fall 2021) Introduction to linear algebra 
-### Math 3B (Fall 2021) Calculus 2 
+### 2021-2022
 
-# UTK
+* Math 3B (Spring 2022) Calculus 2 
+* Math 3B (Winter 2022) Calculus 2 
+* Math 4A (Fall 2021) Introduction to linear algebra 
+* Math 3B (Fall 2021) Calculus 2 
+
+## UTK
+
+*University of Tennessee Knoxville *
+
+### Teaching Assistant
+* Math 231 (2020 Fall) Differential Equation 1
+* Math 231 (2020 Spring) Differential Equation 1
+* Math 123 (2019 Fall) Finite Mathematics
+* Math 125 (2019 Spring) Basic Calculus
+* Math 231 (2018 Fall) Differential Equation 1
+* Math 125 (2018 Spring) Basic Calculus
+* Math 125 (2017 Fall) Basic Calculus
+* Math 125 (2017 Spring) Basic Calculus
+* Math 119 (2016 Fall) College Algebra
+
+## Secondary schools
+
+* 10- and 11-th grade Mathematics (2011) Hapdeok Steel High School (Korea)
+* 7-9th grade Mathematics (2008) Geunheung Middle School (Korea)
+* 11-th grade Mathematics (2007) Deacheon Women’s High School (Korea)
+
+# Mentoring
+
+## Undergraduate Research
+
+* (2021 Summer REU, co-mentor Tang S. at UCSB) Li, D., Malowney S., Trehan R., \& Chung T. *Sparse Learning of Multi-Agent Systems from Data*. 
+
+<!-- Dongyang Li, Shelby Malowney, Ritwik Trehan, Tim Chung -->
+
+* (2023 Summer-Fall) Karo, R. \& Sabata, S. *Data-driven discovery of mobility of Cahn-Hilliard equation*. 
+
+## Directed Reading
+
+* (2023 Winter-Spring) Sabata, S. *Hamiltonian Monte Carlo*.
+
+## Diversity, Equity, Inclusion
+
+*Institution-wide*
+
+* **First-gen and transfer mentoring**	(2023 Fall): Giving advice and information on how to get involved in research, how to balance work/academic/life, and how to get involved K-12 education program.
+
+*Class-wide*
+
+* Friendship hours (2023 Fall): Career/Life
+* Wisdom hours (2023 Spring): Career/Life
+* Growth hours (2023 Winter): Career/Life
+* Friendship hours (2022 Fall): Career/Life
+* Small gathering (2022 Spring): Career/Life
+

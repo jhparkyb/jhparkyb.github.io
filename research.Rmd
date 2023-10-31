@@ -26,7 +26,7 @@ I study how Nesterov acceleration can be explained using a simply, physical intu
 I study efficient computational simulation of important models from physics and materials science. 
 
 
-![Nesterove acceleration, momentum method, gradient descent](resources/movies/simulations/FCH.gif){width=45%} ![Nesterove acceleration, momentum method, gradient descent](resources/movies/simulations/PFC4.gif){width=45%} 
+![Functionalized Cahn-Hilliard](resources/movies/simulations/FCH.gif){width=45%} ![Phase field crystal](resources/movies/simulations/PFC6.gif){width=45%} 
 
 ### Related publications
 

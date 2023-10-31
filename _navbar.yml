@@ -9,10 +9,10 @@ left:
   #      href: ./aboutme.html
   #- text: "Project"
   #  menu:
-  - text: "Teaching"
+  - text: "Teaching/Mentoring"
     href: ./teaching.html
-  - text: "Mentoring"
-    href: ./mentoring.html
+  # - text: "Mentoring"
+  #   href: ./mentoring.html
   #- text: "Cheatsheets"
   #  href: ./cheatsheets.html
   - text: "Research"

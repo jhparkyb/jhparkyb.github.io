@@ -11,7 +11,7 @@ I am a Visiting Assistant Professor of the [Mathematics Departement of the Unive
 
 | | | |
 |:-:|:-|:-:|
-| ![my picture](resources/images/visualcomm/jhp_portrait01.png){width=150px} |  **Address**: <br> Department of Mathematics <br> South Hall, Room 6607 <br> University of California <br> Santa Barbara, CA 93106-3080  <br> **Email**: jhpark1\@ucsb.edu <br> **Office**: South Hall 6524 <br> [CV](https://drive.google.com/file/d/1blMn-KBASJxGi3-jwDDa53TPjNY4vMJ8/view?usp=drivesdk)| Here is my [CV](resources/documents/modernCV.pdf). |
+| ![my picture](resources/images/visualcomm/jhp_portrait01.png){width=150px} |  **Address**: <br> Department of Mathematics <br> South Hall, Room 6607 <br> University of California <br> Santa Barbara, CA 93106-3080  <br> **Email**: jhpark1\@ucsb.edu <br> **Office**: South Hall 6524 s| Here is my **[CV](resources/documents/modernCV.pdf)**. |
 
 ## Current classes
 
