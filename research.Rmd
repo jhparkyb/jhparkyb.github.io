@@ -1,7 +1,7 @@
 ---
 title: "Research"
-author: "Jea-Hyun Park"
-date: "2023-10-30"
+# author: "Jea-Hyun Park"
+# date: "2023-10-30"
 output: html_document
 ---
 
@@ -9,36 +9,43 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Interestes
+
+* Optimization
+* Continuous model for discrete methods
+* Fast numerical solver for high order, nonlinear PDE
+* Phase Field Models and Numerical Methods
+* Inference on PDE and Stochastic Models
+* Inverse problem
+* Methods for Bayesian inference (MCMC, HMC, coupling, etc)
+* Information Geometry
+* Mathematical Aspect of Machine Learning and Neural Network
+
+# Publications
+
+| |
+|:-:|
+| ![Nesterove acceleration, momentum method, gradient descent](resources/movies/simulations/2D_GD_AGD_MM.gif){width=65%} |
+| Convergence behaviors of Nesterove acceleration (AGD), momentum method (MM), gradient descent (GD) [1]|
+
+| | |
+|:-:|:-:|
+|![Functionalized Cahn-Hilliard](resources/movies/simulations/FCH.gif){width=100%} | ![Phase field crystal](resources/movies/simulations/PFC6.gif){width=100%} |
+| Evolution of annulus-shaped mixture under Functionalized Cahn-Hilliard model [2] | Crystal formation from grains using the phase field crystal model [2]|
+
+
 
 ## Optimization and its applications to numerical PDEs
 
-I study how Nesterov acceleration can be explained using a simply, physical intuition and use it to solve a nonlinear, nonlocal PDEs. 
-
-
-![Nesterove acceleration, momentum method, gradient descent](resources/movies/simulations/2D_GD_AGD_MM.gif){width=70%}
-
-### Related publications
-
-1. Park, J.-H., Salgado, A. J., & Wise, S. M. (2021). Preconditioned accelerated gradient descent methods for locally Lipschitz smooth objectives with applications to the solution of nonlinear PDEs. J. Sci. Comput., 89(1), Paper No. 17, 37. https://doi.org/10.1007/s10915-021-01615-8
+[1] Park, J.-H., Salgado, A. J., & Wise, S. M. (2021). Preconditioned accelerated gradient descent methods for locally Lipschitz smooth objectives with applications to the solution of nonlinear PDEs. J. Sci. Comput., 89(1), Paper No. 17, 37. https://doi.org/10.1007/s10915-021-01615-8
 
 ## Computational study of real world problems
 
-I study efficient computational simulation of important models from physics and materials science. 
+[2] Park, J.-H., Salgado, A. J., \& Wise, S. M. (2023). *Benchmark computations of the phase field crystal and functionalized Cahn-Hilliard equations via fully implicit, Nesterov accelerated schemes*. Communications in Computational Physics, 33(2), 367–398. https://doi.org/10.4208/cicp.OA-2022-0117
 
-
-![Functionalized Cahn-Hilliard](resources/movies/simulations/FCH.gif){width=45%} ![Phase field crystal](resources/movies/simulations/PFC6.gif){width=45%} 
-
-### Related publications
-
-2. Park, J.-H., Salgado, A. J., \& Wise, S. M. (2023). *Benchmark computations of the phase field crystal and functionalized Cahn-Hilliard equations via fully implicit, Nesterov accelerated schemes*. Communications in Computational Physics, 33(2), 367–398. https://doi.org/10.4208/cicp.OA-2022-0117
-
-3. (In progress) Park, J.-H., Salgado, A. J., \& Wise, S. M. *Perturbed preconditioned gradient descent method for Cahn-Hilliard equation with variable mobility*.
+[3] (In progress) Park, J.-H., Salgado, A. J., \& Wise, S. M. *Perturbed preconditioned gradient descent method for Cahn-Hilliard equation with variable mobility*.
 
 ## Theoretical numerical analysis
 
-I study theoretical foundations basis on which we can derive desirable properties of numerical methods
-
-### Related publications
-
-4. (in progress) Park, J.-H., Salgado, A. J., \& Wise, S. M. *Nondegenerate convergence of generic local Lipschitz smooth functionals beyond Sobolev embedding*.
+[4] (in progress) Park, J.-H., Salgado, A. J., \& Wise, S. M. *Nondegenerate convergence of generic local Lipschitz smooth functionals beyond Sobolev embedding*.
 

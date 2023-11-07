@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
-author: "Jea-Hyun Park"
-date: "2022-09-18"
+# author: "Jea-Hyun Park"
+# date: "2022-09-18"
 output: html_document
 ---
 
@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Courses
+# Teaching
 
 ## UCSB
 
-*University of California Santa Barbara*
+*Visiting Assistant Professor at University of California Santa Barbara*
 
 ### 2023-2024
 
@@ -36,9 +36,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## UTK
 
-*University of Tennessee Knoxville *
+*Teaching Assistant at University of Tennessee Knoxville *
 
-### Teaching Assistant
 * Math 231 (2020 Fall) Differential Equation 1
 * Math 231 (2020 Spring) Differential Equation 1
 * Math 123 (2019 Fall) Finite Mathematics
@@ -50,6 +49,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * Math 119 (2016 Fall) College Algebra
 
 ## Secondary schools
+
+*Mathematics Teacher at secondary schools*
 
 * 10- and 11-th grade Mathematics (2011) Hapdeok Steel High School (Korea)
 * 7-9th grade Mathematics (2008) Geunheung Middle School (Korea)
@@ -77,9 +78,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 *Class-wide*
 
-* Friendship hours (2023 Fall): Career/Life
-* Wisdom hours (2023 Spring): Career/Life
-* Growth hours (2023 Winter): Career/Life
-* Friendship hours (2022 Fall): Career/Life
-* Small gathering (2022 Spring): Career/Life
+* Friendship hours (2023 Fall): Career and college life
+* Wisdom hours (2023 Spring): Career and college life
+* Growth hours (2023 Winter): Career and college life
+* Friendship hours (2022 Fall): Career and college life
+* Small gathering (2022 Spring): Career and college life
 

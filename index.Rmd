@@ -1,5 +1,5 @@
 ---
-title: "Jea-Hyun Park's website"
+title: "Jea-Hyun's website"
 output: 
   html_document:
     toc: FALSE
@@ -7,11 +7,10 @@ output:
 
 ## About
 
-I am a Visiting Assistant Professor of the [Mathematics Departement of the University of California, Santa Barbara](https://www.math.ucsb.edu/). I finished my Ph.D. in Mathematics (computational and applied mathematics) at the [Mathematics Department of the University of Tennessee at Knoxville](https://www.math.utk.edu) under the supervision of [Dr. Steven Wise](http://www.math.utk.edu/~swise) and [Dr. Abner Salgado](http://www.math.utk.edu/~abnersg/).
 
 | | | |
-|:-:|:-|:-:|
-| ![my picture](resources/images/visualcomm/jhp_portrait01.png){width=150px} |  **Address**: <br> Department of Mathematics <br> South Hall, Room 6607 <br> University of California <br> Santa Barbara, CA 93106-3080  <br> **Email**: jhpark1\@ucsb.edu <br> **Office**: South Hall 6524 s| Here is my **[CV](resources/documents/modernCV.pdf)**. |
+|:-:|:-|:-|
+| ![my picture](resources/images/visualcomm/jhp_portrait01.png){width=150px} | I am a Visiting Assistant Professor of the [Mathematics Departement at the University of California, Santa Barbara](https://www.math.ucsb.edu/). I finished my Ph.D. in Mathematics (computational and applied mathematics) at the [Mathematics Department at the University of Tennessee at Knoxville](https://www.math.utk.edu) under the supervision of [Dr. Steven Wise](http://www.math.utk.edu/~swise) and [Dr. Abner Salgado](http://www.math.utk.edu/~abnersg/). <br><br> Here is my **[CV](resources/documents/modernCV.pdf)**. | **Address**: <br> Department of Mathematics <br> South Hall, Room 6607 <br> University of California <br> Santa Barbara, CA 93106-3080  <br> **Email**: jhpark1\@ucsb.edu <br> **Office**: South Hall 6524 s| 
 
 ## Current classes
 
@@ -19,21 +18,7 @@ I am a Visiting Assistant Professor of the [Mathematics Departement of the Unive
 
 | | |
 |:-|:-|
-|[Math 104A (Fall 2023) Github](https://github.com/jhparkyb/NumAnalNotes_Pub) | **Office hours** (Fall 2023) <br> M: 3:30-4:40 PM (SH 4519) <br> T: 2:00-3:00 PM (SH 4519) <br> W: 4:00-5:00 PM (SH 4607) <br> R: 8:00-9:00 AM (SH 6617) <br> **Friendship hours** (Fall 2023) <br> F: 4:00-5:00 PM (SH 6524) |
-
-
-
-## Research interests
-
-* Optimization
-* Continuous model for discrete methods
-* Fast numerical solver for high order, nonlinear PDE
-* Phase Field Models and Numerical Methods
-* Inference on PDE and Stochastic Models
-* Inverse problem
-* Methods for Bayesian inference (MCMC, HMC, coupling, etc)
-* Information Geometry
-* Mathematical Aspect of Machine Learning and Neural Network
+|Math 104A (Fall 2023) [Notes (Github)](https://github.com/jhparkyb/NumAnalNotes_Pub) | **Office hours** (Fall 2023) <br> M: 3:30-4:40 PM (SH 4519) <br> T: 2:00-3:00 PM (SH 4519) <br> W: 4:00-5:00 PM (SH 4607) <br> R: 8:00-9:00 AM (SH 6617) <br> **Friendship hours** (Fall 2023) <br> F: 4:00-5:00 PM (SH 6524) |
 
 <!-- [ Math 6A (Winter 2023)](./M6A_2023Winter.html)
 
