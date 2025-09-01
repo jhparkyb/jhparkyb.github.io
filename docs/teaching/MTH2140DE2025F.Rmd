@@ -1,0 +1,17 @@
+---
+title: "Math 2140 (2025 Fall) - Differential Equations"
+author: "Jea-Hyun Park"
+date: "2025-09-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Notes
+
+Standard-based grading information: [SBG MTH 2140](./details/sbgmth2140.html)
+
+ 

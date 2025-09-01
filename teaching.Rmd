@@ -12,6 +12,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Teaching
 
+## MSOE (Milwaukee School of Engineering)
+
+### 2025-2026
+
+* Math 2140 (Fall 2025) Differential equation [Standard-based grading](./teaching/details/sbgmth2140.html)
+
 ## UCSB
 
 *Visiting Assistant Professor at University of California Santa Barbara*

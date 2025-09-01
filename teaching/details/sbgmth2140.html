@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Standards-Based Grading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals with Calm Blue/Green Accents -->
+    <!-- Application Structure Plan: The application is structured into five thematic sections: 1. "Why SBG?" to establish the problem with traditional grades. 2. "How It Works" to explain the core 0/1 mechanic. 3. "Course Standards" to provide a detailed, interactive list of all course-specific learning objectives. 4. "Visualizing Your Journey" to show the path to success over the semester, now contextualized by the full list of standards. 5. "Your Questions Answered" to clarify common concerns like reassessment. This updated structure introduces the specific requirements before showing the progress chart, giving students a concrete understanding of the journey ahead. -->
+    <!-- Visualization & Content Choices: 
+        - Report Info: Traditional grades are confusing. -> Goal: Inform -> Viz/Method: Side-by-side comparison cards with clear metaphors (pilot, engineer). -> Interaction: None, static display. -> Justification: Clearly contrasts the old vs. new paradigm using relatable, constructive analogies. -> Library/Method: HTML/Tailwind.
+        - Report Info: Detailed list of all 58 course standards with core/multi-point designations. -> Goal: Organize/Inform -> Viz/Method: Interactive Accordion list. -> Interaction: Clicking a standard category reveals the specific objectives within it. Badges highlight special standards. -> Justification: Manages a large amount of information without overwhelming the user. Allows for easy browsing and reference. -> Library/Method: HTML/Tailwind/JS.
+        - Report Info: Grade progression from many 0s to many 1s. -> Goal: Change/Reassure -> Viz/Method: Line chart showing mastery over time, scaled to 67 total points. -> Interaction: Buttons to simulate progress. -> Justification: Visually demonstrates the growth concept, turning a potentially negative experience (initial low scores) into a positive, forward-looking one. -> Library/Method: Chart.js/JS.
+        - Report Info: Reassessment policy. -> Goal: Inform -> Viz/Method: Accordion/FAQ section. -> Interaction: Clicking a question reveals the answer. -> Justification: Organizes detailed information cleanly and allows users to pull information as needed. -> Library/Method: HTML/Tailwind/JS.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfbf7;
+            color: #3f3c36;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #f0ebe4;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .nav-button {
+            transition: all 0.3s ease;
+            color: #78716c;
+        }
+        .nav-button.active, .nav-button:hover {
+            color: #0ea5e9;
+            background-color: #f0f9ff;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40vh;
+            max-height: 450px;
+        }
+        .progress-button {
+            transition: all 0.3s ease;
+        }
+        .standard-answer ul {
+            list-style-position: inside;
+            list-style-type: disc;
+            padding-left: 1rem;
+        }
+         .standard-answer ul li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="sticky top-0 bg-white/80 backdrop-blur-lg z-10 border-b border-gray-200">
+        <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <span class="text-2xl font-bold text-gray-800">Your Guide to SBG</span>
+                <div class="hidden sm:flex sm:space-x-2">
+                    <a href="#why-sbg" class="nav-button px-3 py-2 rounded-md text-sm font-medium">Why SBG?</a>
+                    <a href="#how-it-works" class="nav-button px-3 py-2 rounded-md text-sm font-medium">How It Works</a>
+                    <a href="#standards" class="nav-button px-3 py-2 rounded-md text-sm font-medium">Course Standards</a>
+                    <a href="#journey" class="nav-button px-3 py-2 rounded-md text-sm font-medium">Your Journey</a>
+                    <a href="#faq" class="nav-button px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <section id="why-sbg" class="mb-16 pt-12 scroll-mt-16">
+            <div class="text-center">
+                 <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">Why a New Approach to Grading?</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">Traditional grades can be confusing. A 75% doesn't tell you what you know versus what you don't. SBG gives you a crystal-clear picture of your skills by focusing on one thing: mastery. Here are a couple of ways to think about it.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://jhparkyb.github.io/resources/movies/sharingideas/landing1.gif" alt="Illustration of a pilot in a cockpit" class="rounded-md mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold my-4">Think Like a Pilot</h3>
+                    <p class="text-gray-700">You wouldn't want to fly with a pilot who is '75% good' at landing. Landing a plane is a pass/fail skill—you either master it or you don't. In this course, we treat core math skills the same way. True understanding is what ensures a safe journey through future concepts.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-sm text-center">
+                    <img src="https://jhparkyb.github.io/resources/movies/sharingideas/car-engine.gif" alt="Illustration of a smartphone app being built" class="rounded-md mb-4 mx-auto">
+                    <h3 class="text-2xl font-bold my-4">Build Like an Engineer</h3>
+                    <p class="text-gray-700">Imagine building a weather app. If it can show the temperature but can't yet provide a forecast, it isn't ready to ship. It’s not a failure, it’s just incomplete. A '0' in this class is the same—it means a key feature isn't working yet, and we need to go back and build it right.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-bold text-center mb-2">How It Works: The 1/0 Scale</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Every exam question will be specified with a specific standard item. A score isn't a final judgment; it's feedback to guide your learning.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold mb-2 text-green-600">Score: 1 = Mastery ✅</h3>
+                    <p class="text-gray-700">This means you've successfully demonstrated a complete understanding of a skill. You've got this!</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold mb-2 text-amber-600">Score: 0 = Not Yet 🔄</h3>
+                    <p class="text-gray-700">This simply means the skill needs more practice. It's a temporary status, not a failure. It's a signpost showing us exactly what to work on next, and you'll have more chances to demonstrate mastery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="standards" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-bold text-center mb-2">Course Standards</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">There are 58 standard items. Core Standards (in bold) must be mastered twice (once during the semester, once on the final) and count for two points each, making the total number of mastery points 67.</p>
+            <div class="space-y-2 max-w-3xl mx-auto">
+                <!-- Standards will be dynamically inserted here by JS -->
+            </div>
+        </section>
+
+        <section id="journey" class="mb-16 scroll-mt-16">
+            <h2 class="text-3xl font-bold text-center mb-2">Visualizing Your Journey</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">After the first exam, seeing a lot of '0's is normal. This chart shows how your mastery of the 67 total points will grow as you learn, practice, and reassess.</p>
+            <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-gray-200">
+                <div class="chart-container">
+                    <canvas id="progressChart"></canvas>
+                </div>
+                <div class="flex justify-center space-x-2 sm:space-x-4 mt-6">
+                    <button id="exam1Btn" class="progress-button bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full shadow-sm">First Exam</button>
+                    <button id="midtermBtn" class="progress-button bg-gray-300 hover:bg-sky-500 hover:text-white text-gray-700 font-bold py-2 px-4 rounded-full">Midterm</button>
+                    <button id="finalBtn" class="progress-button bg-gray-300 hover:bg-sky-500 hover:text-white text-gray-700 font-bold py-2 px-4 rounded-full">Finals</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="scroll-mt-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Your Questions Answered</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <button class="faq-question w-full text-left p-4 font-semibold text-lg flex justify-between items-center">
+                        <span>How do I reattempt a standard item?</span>
+                        <span class="faq-icon transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div class="faq-answer hidden p-4 border-t border-gray-200 text-gray-700">
+                        On each in-class exam, you can reattempt any standard item from the two previous exams (e.g., on Exam 3, you can reattempt items from Exams 1 & 2). There will be a sign-up survey for this before each exam. The final exam is your last opportunity to demonstrate mastery on any standard item from the entire course.
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <button class="faq-question w-full text-left p-4 font-semibold text-lg flex justify-between items-center">
+                        <span>Is a '0' permanently on my record?</span>
+                        <span class="faq-icon transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div class="faq-answer hidden p-4 border-t border-gray-200 text-gray-700">
+                        Absolutely not. A '0' is temporary. The system is built on reassessment. Your final grade reflects the skills you've mastered by the end, not your first attempt.
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-lg border border-gray-200 shadow-sm">
+                    <button class="faq-question w-full text-left p-4 font-semibold text-lg flex justify-between items-center">
+                        <span>How is my final grade calculated?</span>
+                        <span class="faq-icon transform transition-transform duration-300">▼</span>
+                    </button>
+                    <div class="faq-answer hidden p-4 border-t border-gray-200 text-gray-700">
+                        Your final grade is determined by the total number of mastery points you have earned by the end of the semester (max 67). It is not an average. For example, an 'A' might require earning at least 60 points. See the syllabus for the specific breakdown.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-8 mt-16 border-t border-gray-200">
+        <p class="text-gray-500">Let's have a great semester focused on learning!</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const standardsData = [
+                { title: "Direction Fields", items: ["Sketch and identify direction fields of given first-order differential equations.", "Sketch solutions to a differential equation on its direction field."] },
+                { title: "Equilibrium Solutions", items: ["Find and classify equilibrium solutions of autonomous differential equations.", "Sketch the solutions of autonomous differential equations, including the equilibrium solutions."] },
+                { title: "Qualitative Analysis of First-Order Equations", items: ["Determine when solutions are increasing or decreasing and their long-term behavior without solving the differential equation."] },
+                { title: "Classification of Differential Equations", items: ["Classify differential equations as linear or nonlinear, homogeneous or nonhomogeneous, ordinary or partial, and determine their order."] },
+                { title: "Verification of Solutions", items: ["Verify if a given function is a solution of a differential equation or initial value problem."], core: true },
+                { title: "Separation of Variables", items: ["Solve separable first-order differential equations by the method of separation of variables.", "Find the domain of definition for initial value problems."], points: 2 },
+                { title: "Integrating Factors", items: ["Solve first-order linear differential equations by the method of integrating factors."], points: 2 },
+                { title: "Modeling with First-Order Differential Equations", items: ["Model simple applications using first-order differential equations and interpret the results.", "Model advanced applications using first-order differential equations and interpret the results."], points: 2, core: true, subPoints: [2,2] },
+                { title: "Existence and Uniqueness of Solutions", items: ["Use the existence and uniqueness theorem to state the largest interval of existence for the solution to an initial value problem for a first-order linear differential equation.", "Use the existence and uniqueness theorem to state an interval of existence for a solution to an initial value problem for a first-order nonlinear differential equation."] },
+                { title: "Euler's Method", items: ["Approximate solutions with error estimation of first-order initial value problems using Euler’s method."] },
+                { title: "Theory of Second-Order Linear Homogeneous Equations", items: ["Demonstrate an understanding of the principle of superposition for linear homogeneous equations.", "Use the Wronskian to determine if a set of solutions to a homogeneous linear differential equation form a fundamental set of solutions.", "Use a fundamental set of solutions to construct the general solution of a differential equation or a particular solution of an initial value problem."] },
+                { title: "Solving Second-Order Linear Homogeneous Equations", items: ["Solve higher-order homogeneous linear differential equations with constant coefficients using the auxiliary equation (characteristic equation) in all three cases."], points: 3, core: true },
+                { title: "Mechanical and Electrical Vibrations", items: ["Model selected applications using linear higher-order homogeneous differential equations.", "Determine if a model will exhibit underdamped, critically damped, or overdamped motion.", "Graphically determine underdamped, critically damped, and overdamped motion."] },
+                { title: "Method of Undetermined Coefficients", items: ["Solve higher-order linear nonhomogeneous differential equations by the method of undetermined coefficients for polynomial, exponential, and trigonometric forcing functions."], points: 3 },
+                { title: "Forced Vibrations", items: ["Determine the transient and steady-state solution of a given model.", "Identify beats and resonance in undamped models."] },
+                { title: "Laplace Transform - Definition", items: ["Determine the Laplace transform of selected elementary functions using the definition."] },
+                { title: "Laplace Transform - Properties Tables and Linearity", items: ["Determine the Laplace transform of selected elementary functions using tables and linearity.", "Determine the Laplace transform of functions using derived properties of the Laplace transform."], points: 2 },
+                { title: "Inverse Laplace Transform", items: ["Determine the inverse Laplace Transform of elementary functions using tables, linearity, and translation theorems."], points: 3 },
+                { title: "Laplace Transform for Initial Value Problems", items: ["Solve initial value problems using the method of the Laplace transform."], points: 3, core: true },
+                { title: "Unit Step Function", items: ["Write piecewise defined functions as a summation using unit step functions then determine its Laplace transform.", "Use the Laplace transform to solve differential equations with discontinuous forcing functions.", "Interpret models with discontinuous forcing functions."] },
+                { title: "Impulse Functions", items: ["Use the Laplace transform to solve differential equations with impulse forcing functions.", "Interpret models with impulse forcing functions."] },
+                { title: "Matrix Algebra Operations", items: ["Perform basic matrix algebra operations, including addition, multiplication, and scalar multiplication."] },
+                { title: "Systems of Linear Equations", items: ["Write and solve systems of linear equations using matrices."] },
+                { title: "Eigenvalues and Eigenvectors", items: ["Determine the eigenvalues and eigenvectors of a matrix."], points: 2 },
+                { title: "Eigenvalue Method for Homogeneous Linear Systems", items: ["Solve homogeneous linear systems with constant coefficients using the eigenvalue method.", "Sketch and identify phase portraits for a given system and classify the stability of the critical point."], points: 4, subPoints: [2,2] },
+                { title: "Modeling with Linear Systems", items: ["Model selected applications using homogeneous linear systems and interpret the results."], points: 2 }
+            ];
+
+            const standardsContainer = document.querySelector('#standards .space-y-2');
+            standardsData.forEach(std => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'standard-item bg-white rounded-lg border border-gray-200 shadow-sm';
+                
+                let titleHTML = `<span>${std.title}</span>`;
+                let badges = '';
+                if(std.core) badges += `<span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CORE</span>`;
+                if(std.points > 1) badges += `<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${std.points} Points</span>`;
+                
+                itemDiv.innerHTML = `
+                    <button class="standard-question w-full text-left p-4 font-semibold text-lg flex justify-between items-center">
+                        <div class="flex-grow pr-4">${std.core ? `<strong>${std.title}</strong>` : std.title}</div>
+                        <div class="flex-shrink-0">${badges}</div>
+                        <span class="standard-icon transform transition-transform duration-300 ml-4">▼</span>
+                    </button>
+                    <div class="standard-answer hidden p-4 border-t border-gray-200 text-gray-700">
+                        <ul>${std.items.map((item, index) => {
+                            let pointInfo = '';
+                            if(std.subPoints) {
+                                pointInfo = ` (${std.subPoints[index]} points)`;
+                            }
+                            return `<li>${item}${pointInfo}</li>`;
+                        }).join('')}</ul>
+                    </div>
+                `;
+                standardsContainer.appendChild(itemDiv);
+            });
+
+            function setupAccordion(itemClass, questionClass, answerClass, iconClass) {
+                const items = document.querySelectorAll(`.${itemClass}`);
+                items.forEach(item => {
+                    const question = item.querySelector(`.${questionClass}`);
+                    const answer = item.querySelector(`.${answerClass}`);
+                    const icon = item.querySelector(`.${iconClass}`);
+                    question.addEventListener('click', () => {
+                        const isVisible = !answer.classList.contains('hidden');
+                        answer.classList.toggle('hidden');
+                        if (icon) icon.style.transform = isVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+                    });
+                });
+            }
+
+            setupAccordion('faq-item', 'faq-question', 'faq-answer', 'faq-icon');
+            setupAccordion('standard-item', 'standard-question', 'standard-answer', 'standard-icon');
+
+            const ctx = document.getElementById('progressChart').getContext('2d');
+            const totalMasteryPoints = 67;
+
+            const data = {
+                labels: ['Start', 'Exam 1', 'Mid-Semester', 'Finals'],
+                datasets: [{
+                    label: 'Mastery Points Earned',
+                    data: [0, 15, 40, 60],
+                    borderColor: '#0ea5e9',
+                    backgroundColor: 'rgba(14, 165, 233, 0.1)',
+                    fill: true, tension: 0.4, pointBackgroundColor: '#0ea5e9',
+                    pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#0ea5e9', pointRadius: 5, pointHoverRadius: 7
+                }]
+            };
+
+            const progressChart = new Chart(ctx, {
+                type: 'line', data: data,
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true, max: totalMasteryPoints, title: { display: true, text: 'Mastery Points Earned' } },
+                        x: { title: { display: true, text: 'Point in Semester' } }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ` Earned: ${context.parsed.y} of ${totalMasteryPoints} points`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            const exam1Btn = document.getElementById('exam1Btn');
+            const midtermBtn = document.getElementById('midtermBtn');
+            const finalBtn = document.getElementById('finalBtn');
+            const buttons = [exam1Btn, midtermBtn, finalBtn];
+
+            function updateChart(stage) {
+                let newData, activeBtn;
+                buttons.forEach(btn => {
+                    btn.classList.remove('bg-sky-500', 'text-white');
+                    btn.classList.add('bg-gray-300', 'text-gray-700', 'hover:bg-sky-500', 'hover:text-white');
+                });
+                if (stage === 'exam1') { newData = [0, 15, 15, 15]; activeBtn = exam1Btn; }
+                else if (stage === 'midterm') { newData = [0, 15, 40, 40]; activeBtn = midtermBtn; }
+                else { newData = [0, 15, 40, 60]; activeBtn = finalBtn; }
+                activeBtn.classList.add('bg-sky-500', 'text-white');
+                activeBtn.classList.remove('bg-gray-300', 'text-gray-700', 'hover:bg-sky-500', 'hover:text-white');
+                progressChart.data.datasets[0].data = newData;
+                progressChart.update();
+            }
+
+            exam1Btn.addEventListener('click', () => updateChart('exam1'));
+            midtermBtn.addEventListener('click', () => updateChart('midterm'));
+            finalBtn.addEventListener('click', () => updateChart('final'));
+            updateChart('exam1');
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            const sections = document.querySelectorAll('main section');
+            const navLinks = document.querySelectorAll('.nav-button');
+            window.onscroll = () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) { current = section.getAttribute('id'); }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) { link.classList.add('active'); }
+                });
+            };
+        });
+    </script>
+</body>
+</html>
