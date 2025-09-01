@@ -178,57 +178,64 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const standardsData = [
-                { title: "Direction Fields", items: ["Sketch and identify direction fields of given first-order differential equations.", "Sketch solutions to a differential equation on its direction field."] },
-                { title: "Equilibrium Solutions", items: ["Find and classify equilibrium solutions of autonomous differential equations.", "Sketch the solutions of autonomous differential equations, including the equilibrium solutions."] },
-                { title: "Qualitative Analysis of First-Order Equations", items: ["Determine when solutions are increasing or decreasing and their long-term behavior without solving the differential equation."] },
-                { title: "Classification of Differential Equations", items: ["Classify differential equations as linear or nonlinear, homogeneous or nonhomogeneous, ordinary or partial, and determine their order."] },
-                { title: "Verification of Solutions", items: ["Verify if a given function is a solution of a differential equation or initial value problem."], core: true },
-                { title: "Separation of Variables", items: ["Solve separable first-order differential equations by the method of separation of variables.", "Find the domain of definition for initial value problems."], points: 2 },
-                { title: "Integrating Factors", items: ["Solve first-order linear differential equations by the method of integrating factors."], points: 2 },
-                { title: "Modeling with First-Order Differential Equations", items: ["Model simple applications using first-order differential equations and interpret the results.", "Model advanced applications using first-order differential equations and interpret the results."], points: 2, core: true, subPoints: [2,2] },
-                { title: "Existence and Uniqueness of Solutions", items: ["Use the existence and uniqueness theorem to state the largest interval of existence for the solution to an initial value problem for a first-order linear differential equation.", "Use the existence and uniqueness theorem to state an interval of existence for a solution to an initial value problem for a first-order nonlinear differential equation."] },
-                { title: "Euler's Method", items: ["Approximate solutions with error estimation of first-order initial value problems using Euler’s method."] },
-                { title: "Theory of Second-Order Linear Homogeneous Equations", items: ["Demonstrate an understanding of the principle of superposition for linear homogeneous equations.", "Use the Wronskian to determine if a set of solutions to a homogeneous linear differential equation form a fundamental set of solutions.", "Use a fundamental set of solutions to construct the general solution of a differential equation or a particular solution of an initial value problem."] },
-                { title: "Solving Second-Order Linear Homogeneous Equations", items: ["Solve higher-order homogeneous linear differential equations with constant coefficients using the auxiliary equation (characteristic equation) in all three cases."], points: 3, core: true },
-                { title: "Mechanical and Electrical Vibrations", items: ["Model selected applications using linear higher-order homogeneous differential equations.", "Determine if a model will exhibit underdamped, critically damped, or overdamped motion.", "Graphically determine underdamped, critically damped, and overdamped motion."] },
-                { title: "Method of Undetermined Coefficients", items: ["Solve higher-order linear nonhomogeneous differential equations by the method of undetermined coefficients for polynomial, exponential, and trigonometric forcing functions."], points: 3 },
-                { title: "Forced Vibrations", items: ["Determine the transient and steady-state solution of a given model.", "Identify beats and resonance in undamped models."] },
-                { title: "Laplace Transform - Definition", items: ["Determine the Laplace transform of selected elementary functions using the definition."] },
-                { title: "Laplace Transform - Properties Tables and Linearity", items: ["Determine the Laplace transform of selected elementary functions using tables and linearity.", "Determine the Laplace transform of functions using derived properties of the Laplace transform."], points: 2 },
-                { title: "Inverse Laplace Transform", items: ["Determine the inverse Laplace Transform of elementary functions using tables, linearity, and translation theorems."], points: 3 },
-                { title: "Laplace Transform for Initial Value Problems", items: ["Solve initial value problems using the method of the Laplace transform."], points: 3, core: true },
-                { title: "Unit Step Function", items: ["Write piecewise defined functions as a summation using unit step functions then determine its Laplace transform.", "Use the Laplace transform to solve differential equations with discontinuous forcing functions.", "Interpret models with discontinuous forcing functions."] },
-                { title: "Impulse Functions", items: ["Use the Laplace transform to solve differential equations with impulse forcing functions.", "Interpret models with impulse forcing functions."] },
-                { title: "Matrix Algebra Operations", items: ["Perform basic matrix algebra operations, including addition, multiplication, and scalar multiplication."] },
-                { title: "Systems of Linear Equations", items: ["Write and solve systems of linear equations using matrices."] },
-                { title: "Eigenvalues and Eigenvectors", items: ["Determine the eigenvalues and eigenvectors of a matrix."], points: 2 },
-                { title: "Eigenvalue Method for Homogeneous Linear Systems", items: ["Solve homogeneous linear systems with constant coefficients using the eigenvalue method.", "Sketch and identify phase portraits for a given system and classify the stability of the critical point."], points: 4, subPoints: [2,2] },
-                { title: "Modeling with Linear Systems", items: ["Model selected applications using homogeneous linear systems and interpret the results."], points: 2 }
+                { title: "Direction Fields", items: [{ text: "Sketch and identify direction fields of given first-order differential equations." }, { text: "Sketch solutions to a differential equation on its direction field." }] },
+                { title: "Equilibrium Solutions", items: [{ text: "Find and classify equilibrium solutions of autonomous differential equations." }, { text: "Sketch the solutions of autonomous differential equations, including the equilibrium solutions." }] },
+                { title: "Qualitative Analysis of First-Order Equations", items: [{ text: "Determine when solutions are increasing or decreasing and their long-term behavior without solving the differential equation." }] },
+                { title: "Classification of Differential Equations", items: [{ text: "Classify differential equations as linear or nonlinear, homogeneous or nonhomogeneous, ordinary or partial, and determine their order." }] },
+                { title: "Verification of Solutions", items: [{ text: "Verify if a given function is a solution of a differential equation or initial value problem.", core: true }] },
+                { title: "Separation of Variables", items: [{ text: "Solve separable first-order differential equations by the method of separation of variables.", points: 2 }, { text: "Find the domain of definition for initial value problems." }] },
+                { title: "Integrating Factors", items: [{ text: "Solve first-order linear differential equations by the method of integrating factors.", points: 2 }] },
+                { title: "Modeling with First-Order Differential Equations", items: [{ text: "Model simple applications using first-order differential equations and interpret the results.", points: 2, core: true }, { text: "Model advanced applications using first-order differential equations and interpret the results.", points: 2 }] },
+                { title: "Existence and Uniqueness of Solutions", items: [{ text: "Use the existence and uniqueness theorem to state the largest interval of existence for the solution to an initial value problem for a first-order linear differential equation." }, { text: "Use the existence and uniqueness theorem to state an interval of existence for a solution to an initial value problem for a first-order nonlinear differential equation." }] },
+                { title: "Euler's Method", items: [{ text: "Approximate solutions with error estimation of first-order initial value problems using Euler’s method." }] },
+                { title: "Theory of Second-Order Linear Homogeneous Equations", items: [{ text: "Demonstrate an understanding of the principle of superposition for linear homogeneous equations." }, { text: "Use the Wronskian to determine if a set of solutions to a homogeneous linear differential equation form a fundamental set of solutions." }, { text: "Use a fundamental set of solutions to construct the general solution of a differential equation or a particular solution of an initial value problem." }] },
+                { title: "Solving Second-Order Linear Homogeneous Equations", items: [{ text: "Solve higher-order homogeneous linear differential equations with constant coefficients using the auxiliary equation (characteristic equation) in all three cases.", points: 3, core: true }] },
+                { title: "Mechanical and Electrical Vibrations", items: [{ text: "Model selected applications using linear higher-order homogeneous differential equations." }, { text: "Determine if a model will exhibit underdamped, critically damped, or overdamped motion." }, { text: "Graphically determine underdamped, critically damped, and overdamped motion." }] },
+                { title: "Method of Undetermined Coefficients", items: [{ text: "Solve higher-order linear nonhomogeneous differential equations by the method of undetermined coefficients for polynomial, exponential, and trigonometric forcing functions.", points: 3 }] },
+                { title: "Forced Vibrations", items: [{ text: "Determine the transient and steady-state solution of a given model." }, { text: "Identify beats and resonance in undamped models." }] },
+                { title: "Laplace Transform - Definition", items: [{ text: "Determine the Laplace transform of selected elementary functions using the definition." }] },
+                { title: "Laplace Transform - Properties Tables and Linearity", items: [{ text: "Determine the Laplace transform of selected elementary functions using tables and linearity." }, { text: "Determine the Laplace transform of functions using derived properties of the Laplace transform.", points: 2 }] },
+                { title: "Inverse Laplace Transform", items: [{ text: "Determine the inverse Laplace Transform of elementary functions using tables, linearity, and translation theorems.", points: 3 }] },
+                { title: "Laplace Transform for Initial Value Problems", items: [{ text: "Solve initial value problems using the method of the Laplace transform.", points: 3, core: true }] },
+                { title: "Unit Step Function", items: [{ text: "Write piecewise defined functions as a summation using unit step functions then determine its Laplace transform." }, { text: "Use the Laplace transform to solve differential equations with discontinuous forcing functions." }, { text: "Interpret models with discontinuous forcing functions." }] },
+                { title: "Impulse Functions", items: [{ text: "Use the Laplace transform to solve differential equations with impulse forcing functions." }, { text: "Interpret models with impulse forcing functions." }] },
+                { title: "Matrix Algebra Operations", items: [{ text: "Perform basic matrix algebra operations, including addition, multiplication, and scalar multiplication." }] },
+                { title: "Systems of Linear Equations", items: [{ text: "Write and solve systems of linear equations using matrices." }] },
+                { title: "Eigenvalues and Eigenvectors", items: [{ text: "Determine the eigenvalues and eigenvectors of a matrix.", points: 2 }] },
+                { title: "Eigenvalue Method for Homogeneous Linear Systems", items: [{ text: "Solve homogeneous linear systems with constant coefficients using the eigenvalue method.", points: 2 }, { text: "Sketch and identify phase portraits for a given system and classify the stability of the critical point.", points: 2 }] },
+                { title: "Modeling with Linear Systems", items: [{ text: "Model selected applications using homogeneous linear systems and interpret the results.", points: 2 }] }
             ];
 
             const standardsContainer = document.querySelector('#standards .space-y-2');
+            let highLevelCounter = 1;
             standardsData.forEach(std => {
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'standard-item bg-white rounded-lg border border-gray-200 shadow-sm';
                 
-                let titleHTML = `<span>${std.title}</span>`;
-                let badges = '';
-                if(std.core) badges += `<span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CORE</span>`;
-                if(std.points > 1) badges += `<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${std.points} Points</span>`;
+                const totalPoints = std.items.reduce((sum, item) => sum + (item.points || 1), 0);
+                const isCoreCategory = std.items.some(item => item.core);
                 
+                let badges = '';
+                if (isCoreCategory) badges += `<span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CORE</span>`;
+                const pointLabel = totalPoints === 1 ? 'Point' : 'Points';
+                badges += `<span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${totalPoints} Total ${pointLabel}</span>`;
+
+                const titleText = `${highLevelCounter}. ${isCoreCategory ? `<strong>${std.title}</strong>` : std.title}`;
+                highLevelCounter++;
+
                 itemDiv.innerHTML = `
                     <button class="standard-question w-full text-left p-4 font-semibold text-lg flex justify-between items-center">
-                        <div class="flex-grow pr-4">${std.core ? `<strong>${std.title}</strong>` : std.title}</div>
+                        <div class="flex-grow pr-4">${titleText}</div>
                         <div class="flex-shrink-0">${badges}</div>
                         <span class="standard-icon transform transition-transform duration-300 ml-4">▼</span>
                     </button>
                     <div class="standard-answer hidden p-4 border-t border-gray-200 text-gray-700">
                         <ul>${std.items.map((item, index) => {
-                            let pointInfo = '';
-                            if(std.subPoints) {
-                                pointInfo = ` (${std.subPoints[index]} points)`;
-                            }
-                            return `<li>${item}${pointInfo}</li>`;
+                            let itemBadges = '';
+                            if (item.core) itemBadges += ` <span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CORE</span>`;
+                            if (item.points > 1) itemBadges += ` <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">${item.points} Points</span>`;
+                            const letter = String.fromCharCode(97 + index);
+                            return `<li>(${letter}) ${item.text}${itemBadges}</li>`;
                         }).join('')}</ul>
                     </div>
                 `;
@@ -338,3 +345,4 @@
     </script>
 </body>
 </html>
+
